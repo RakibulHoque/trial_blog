@@ -1,0 +1,16 @@
+{% block content %}
+{% load static %}
+
+{% for person in persons %}
+  <h2>{{person.name}}</h2>
+  <p><br>My name is {{person.name}}. I am {{person.age}} years old.
+    I have graduated of EEE from {{person.instit}} and I am a Programmer. :)<br>
+    This is my image:</p>
+    {% if person.designation %}
+    <p>I AM A RESEARCHER.</p>
+    {% endif %}
+    <center>
+    <img src="{{person.img.url}}" class="responsive-img" style='max-height:200px;' alt="face">
+    </center>
+  {% endfor %}
+{% endblock %}

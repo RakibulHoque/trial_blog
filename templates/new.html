@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>new</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="200px" height="200px" style="border: 1px solid #000"></canvas>
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const context = canvas.getContext("2d");
+      // document.getElementById('myCanvas').getContext("2d").beginPath();
+      // document.getElementById('myCanvas').getContext("2d").moveTo(10,10);
+      // document.getElementById('myCanvas').getContext("2d").lineTo(50,25);
+      // document.getElementById('myCanvas').getContext("2d").stroke();
+      context.beginPath();
+      context.moveTo(10,10);
+      context.lineTo(50,25);
+      context.stroke();
+    </script>
+  </body>
+</html>

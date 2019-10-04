@@ -1,0 +1,10 @@
+{% block content %}
+<h3>CALCULATOR</h3>
+  <p>It only performs addition of two integers. Work is going on. </p>
+  <form class="" action="add" method="post">
+      {% csrf_token %}
+      Enter 1st Number: <input type="text" name="num1" ><br>
+      Enter 2nd Number: <input type="text" name="num2" ><br>
+      <input type="submit">
+  </form>
+{% endblock %}
